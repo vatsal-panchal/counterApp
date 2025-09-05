@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Counter</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        color: teal;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        height: 320px;
+        width: 270px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 30px;
+      }
+
+      .btns {
+        display: flex;
+        gap: 12px;
+        
+      }
+
+      .btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        color: white;
+        
+      }
+
+
+      #increase {
+        background-color: white;
+        color: black;
+        
+      }
+
+      #reset {
+        background-color: white;
+        color: black;
+      }
+
+      #decrease {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <h2>0</h2>
+        <div class="btns">
+          <button class="btn" id="increase">+</button>
+          <button class="btn" id="reset">reset</button>
+          <button class="btn" id="decrease">-</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
